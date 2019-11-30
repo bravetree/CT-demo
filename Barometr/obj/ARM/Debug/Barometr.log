@@ -1,0 +1,61 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.100.116”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  bmp180.cpp
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(211,15): error : ‘ioctl’ was not declared in this scope
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(211,15): error :   if ((error = ioctl(bmp->file, I2C_SLAVE, bmp->address)) < 0) {
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(211,15): error :                ^~~~~
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(246,17): error : ‘i2c_smbus_read_word_data’ was not declared in this scope
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(246,17): error :   int32_t data = i2c_smbus_read_word_data(bmp->file, reg) & 0xFFFF;
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(246,17): error :                  ^~~~~~~~~~~~~~~~~~~~~~~~
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(246,17): message : suggested alternative: ‘i2c_smbus_ioctl_data’
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(246,17): message :   int32_t data = i2c_smbus_read_word_data(bmp->file, reg) & 0xFFFF;
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(246,17): message :                  ^~~~~~~~~~~~~~~~~~~~~~~~
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(246,17): message :                  i2c_smbus_ioctl_data
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(294,2): error : ‘i2c_smbus_write_byte_data’ was not declared in this scope
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(294,2): error :   i2c_smbus_write_byte_data(bmp->file, BMP180_CTRL, BMP180_TMP_READ_CMD);
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(294,2): error :   ^~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(294,2): message : suggested alternative: ‘i2c_smbus_ioctl_data’
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(294,2): message :   i2c_smbus_write_byte_data(bmp->file, BMP180_CTRL, BMP180_TMP_READ_CMD);
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(294,2): message :   ^~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(294,2): message :   i2c_smbus_ioctl_data
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(297,17): error : ‘i2c_smbus_read_word_data’ was not declared in this scope
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(297,17): error :   int32_t data = i2c_smbus_read_word_data(bmp->file, BMP180_REG_TMP) & 0xFFFF;
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(297,17): error :                  ^~~~~~~~~~~~~~~~~~~~~~~~
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(297,17): message : suggested alternative: ‘i2c_smbus_ioctl_data’
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(297,17): message :   int32_t data = i2c_smbus_read_word_data(bmp->file, BMP180_REG_TMP) & 0xFFFF;
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(297,17): message :                  ^~~~~~~~~~~~~~~~~~~~~~~~
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(297,17): message :                  i2c_smbus_ioctl_data
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(334,2): error : ‘i2c_smbus_write_byte_data’ was not declared in this scope
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(334,2): error :   i2c_smbus_write_byte_data(bmp->file, BMP180_CTRL, cmd);
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(334,2): error :   ^~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(334,2): message : suggested alternative: ‘i2c_smbus_ioctl_data’
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(334,2): message :   i2c_smbus_write_byte_data(bmp->file, BMP180_CTRL, cmd);
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(334,2): message :   ^~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(334,2): message :   i2c_smbus_ioctl_data
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(339,8): error : ‘i2c_smbus_read_byte_data’ was not declared in this scope
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(339,8): error :   msb = i2c_smbus_read_byte_data(bmp->file, BMP180_REG_PRE) & 0xFF;
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(339,8): error :         ^~~~~~~~~~~~~~~~~~~~~~~~
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(339,8): message : suggested alternative: ‘i2c_smbus_ioctl_data’
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(339,8): message :   msb = i2c_smbus_read_byte_data(bmp->file, BMP180_REG_PRE) & 0xFF;
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(339,8): message :         ^~~~~~~~~~~~~~~~~~~~~~~~
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(339,8): message :         i2c_smbus_ioctl_data
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(472,22): warning : conversion from ‘double’ to ‘float’ may change value [-Wfloat-conversion]
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(472,22): warning :   T = ((B5 + 8) >> 4) / 10.0;
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(472,22): warning :       ~~~~~~~~~~~~~~~~^~~~~~
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(490,43): warning : conversion from ‘int’ to ‘uint8_t’ {aka ‘unsigned char’} may change value [-Wconversion]
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(490,43): warning :   UP = bmp180_read_raw_pressure(_bmp, bmp->oss);
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(490,43): warning :                                       ~~~~~^~~
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(537,21): warning : conversion from ‘long int’ to ‘float’ may change value [-Wconversion]
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(537,21): warning :   p = bmp180_pressure(_bmp);
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(537,21): warning :       ~~~~~~~~~~~~~~~^~~~~~
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(538,14): warning : conversion from ‘double’ to ‘float’ may change value [-Wfloat-conversion]
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(538,14): warning :   alt = 44330 * (1 - pow(((p / 100) / BMP180_SEA_LEVEL), 1 / 5.255));
+D:\Users\user7\source\repos\Barometr\bmp180.cpp(538,14): warning :         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  main.cpp
+D:\Users\user7\source\repos\Barometr\main.cpp(8,21): warning : ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+D:\Users\user7\source\repos\Barometr\main.cpp(8,21): warning :   char* i2c_device = "/dev/i2c-1";
+D:\Users\user7\source\repos\Barometr\main.cpp(8,21): warning :                      ^~~~~~~~~~~~
