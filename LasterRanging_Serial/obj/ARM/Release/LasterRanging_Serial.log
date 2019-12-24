@@ -1,0 +1,16 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.100.48”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  main.cpp
+D:\ASUS\Documents\GitHub\CT-demo\LasterRanging_Serial\main.cpp(11,13): warning : array subscript has type ‘char’ [-Wchar-subscripts]
+D:\ASUS\Documents\GitHub\CT-demo\LasterRanging_Serial\main.cpp(11,13): warning :          rx[i] = serialGetchar(fd);
+D:\ASUS\Documents\GitHub\CT-demo\LasterRanging_Serial\main.cpp(11,13): warning :              ^
+D:\ASUS\Documents\GitHub\CT-demo\LasterRanging_Serial\main.cpp(20,33): warning : array subscript has type ‘char’ [-Wchar-subscripts]
+D:\ASUS\Documents\GitHub\CT-demo\LasterRanging_Serial\main.cpp(20,33): warning :                  checksum += rx[j];
+D:\ASUS\Documents\GitHub\CT-demo\LasterRanging_Serial\main.cpp(20,33): warning :                                  ^
+  正在链接对象
+  LasterRanging_Serial.vcxproj -> D:\ASUS\Documents\GitHub\CT-demo\LasterRanging_Serial\bin\ARM\Release\LasterRanging_Serial.out
+  正在调用“gpio export 17 out”，工作目录:“/home/pi/projects/LasterRanging_Serial/”
